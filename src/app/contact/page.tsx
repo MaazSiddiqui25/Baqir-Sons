@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import Link from "next/link";
+
 // Update the import path if Container is located elsewhere
 import Container from "../../components/ui/Container";
 
@@ -165,9 +165,9 @@ export default function ContactPage() {
               </h1>
 
               <p className={`text-lg md:text-xl lg:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed ${isLoaded ? 'animate-fade-in-up animation-delay-400' : 'opacity-0'}`}>
-                Ready to start your next project? We're here to help you achieve excellence 
-                with innovative solutions tailored to your needs. Let&apos;s Build Something Together.
-              </p>
+  Ready to start your next project? We&apos;re here to help you achieve excellence 
+  with innovative solutions tailored to your needs. Let&apos;s Build Something Together.
+</p>
 
               {/* Quick Action Buttons */}
               <div className={`flex flex-col sm:flex-row gap-4 justify-center ${isLoaded ? 'animate-fade-in-up animation-delay-600' : 'opacity-0'}`}>
@@ -210,8 +210,8 @@ export default function ContactPage() {
               </span>
             </h2>
             <p className="text-gray-600 text-xl max-w-3xl mx-auto leading-relaxed">
-              Choose your preferred method of communication and we'll respond promptly
-            </p>
+  Choose your preferred method of communication and we&apos;ll respond promptly
+</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -438,11 +438,11 @@ export default function ContactPage() {
             </div>
             
             <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-900">
-              Let's Discuss Your{" "}
-              <span className="bg-gradient-to-r from-emerald-600 to-green-600 bg-clip-text text-transparent">
-                Next Project
-              </span>
-            </h2>
+  Let&apos;s Discuss Your{" "}
+  <span className="bg-gradient-to-r from-emerald-600 to-green-600 bg-clip-text text-transparent">
+    Next Project
+  </span>
+</h2>
             
             <p className="text-xl text-gray-600 mb-12 leading-relaxed">
               Whether you need premium products, custom manufacturing solutions, or expert consultation, 

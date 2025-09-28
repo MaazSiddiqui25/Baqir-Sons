@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Container from "../../components/ui/Container";
-
+import Link from 'next/link';
 export default function MediaPage() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
@@ -312,15 +312,15 @@ export default function MediaPage() {
                 </svg>
               </a>
               
-              <a
-                href="/products"
-                className="inline-flex items-center px-10 py-5 bg-white/80 backdrop-blur-sm border-2 border-emerald-600 text-emerald-600 rounded-2xl font-bold hover:bg-emerald-50 hover:border-emerald-700 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 hover:-translate-y-1 group"
-              >
-                View Products
-                <svg className="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </a>
+             <Link
+  href="/products"
+  className="inline-flex items-center px-10 py-5 bg-white/80 backdrop-blur-sm border-2 border-emerald-600 text-emerald-600 rounded-2xl font-bold hover:bg-emerald-50 hover:border-emerald-700 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 hover:-translate-y-1 group"
+>
+  View Products
+  <svg className="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+  </svg>
+</Link>
             </div>
           </div>
         </Container>

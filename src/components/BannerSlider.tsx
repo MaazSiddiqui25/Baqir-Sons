@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
-import { client, getImageUrl, fetchWithCacheControl, SanityImageAsset } from '../sanity/lib/client';
+import {  getImageUrl,  SanityImageAsset } from '../sanity/lib/client';
+import Image from 'next/image';
 
 interface BannerImage {
   image: SanityImageAsset;
@@ -59,11 +60,13 @@ export default function BannerSlider({ images, autoSlideInterval = 3 }: BannerSl
           
           {/* Main image that fits without cropping */}
           <div className="absolute inset-0 flex items-center justify-center p-4">
-            <img
-              src={getImageUrl(item.image, 1200, 500, '/placeholder-factory.jpg')}
-              alt={item.alt || 'Banner image'}
-              className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
-            />
+         <Image
+  src={getImageUrl(item.image, 1200, 500, '/placeholder-factory.jpg')}
+  alt={item.alt || 'Banner image'}
+  width={1200}
+  height={500}
+  className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
+/>
           </div>
           
           {/* Gradient overlay for better text readability */}

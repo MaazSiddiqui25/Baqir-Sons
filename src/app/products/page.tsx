@@ -3,7 +3,7 @@ import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Container from "../../components/ui/Container";
-import { client, freshClient, getImageUrl, fetchFreshData, fetchViaAPI } from '../../sanity/lib/client';
+import { client,  getImageUrl, fetchFreshData, fetchViaAPI } from '../../sanity/lib/client';
 import { productsListQuery } from "../../lib/queries";
 
 interface Product {
@@ -27,14 +27,7 @@ interface Product {
   featured: boolean;
 }
 
-const categories = [
-  "All Products",
-  "Premium Series",
-  "Professional Series", 
-  "Innovation Series",
-  "Industrial Equipment",
-  "Custom Solutions"
-];
+
 
 const sortOptions = [
   { label: "Featured First", value: "featured" },
@@ -615,8 +608,8 @@ export default function ProductsPage() {
               <div className="flex items-center gap-2 text-sm text-gray-500">
                 <span>Searching for:</span>
                 <span className="px-2 py-1 bg-emerald-100 text-emerald-700 rounded-md font-medium">
-                  "{searchTerm}"
-                </span>
+  &quot;{searchTerm}&quot;
+</span>
               </div>
             )}
           </div>
@@ -658,8 +651,8 @@ export default function ProductsPage() {
               </div>
               <h3 className="text-3xl font-bold text-gray-900 mb-4">No products found</h3>
               <p className="text-gray-600 mb-10 text-lg max-w-md mx-auto leading-relaxed">
-                We couldn't find any products matching your search criteria. Try adjusting your filters.
-              </p>
+  We couldn&apos;t find any products matching your search criteria. Try adjusting your filters.
+</p>
               <button
                 onClick={() => {
                   setSearchTerm("");

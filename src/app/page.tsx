@@ -9,16 +9,17 @@ import { homePageQuery } from "../lib/queries";
 import { PortableText } from '@portabletext/react';
 
 // PortableText components for rich text rendering
+// PortableText components for rich text rendering
 const portableTextComponents = {
   block: {
-    normal: ({ children }: any) => <p className="mb-4 text-gray-700 text-lg leading-relaxed">{children}</p>,
-    h1: ({ children }: any) => <h1 className="text-3xl font-bold mb-4">{children}</h1>,
-    h2: ({ children }: any) => <h2 className="text-2xl font-bold mb-4">{children}</h2>,
-    h3: ({ children }: any) => <h3 className="text-xl font-bold mb-3">{children}</h3>,
+    normal: (props: any) => <p className="mb-4 text-gray-700 text-lg leading-relaxed">{props.children}</p>,
+    h1: (props: any) => <h1 className="text-3xl font-bold mb-4">{props.children}</h1>,
+    h2: (props: any) => <h2 className="text-2xl font-bold mb-4">{props.children}</h2>,
+    h3: (props: any) => <h3 className="text-xl font-bold mb-3">{props.children}</h3>,
   },
   marks: {
-    strong: ({ children }: any) => <strong className="font-bold">{children}</strong>,
-    em: ({ children }: any) => <em className="italic">{children}</em>,
+    strong: (props: any) => <strong className="font-bold">{props.children}</strong>,
+    em: (props: any) => <em className="italic">{props.children}</em>,
   },
 };
 
@@ -202,7 +203,7 @@ useEffect(() => {
             
             {/* Dynamic CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 mb-16 animate-fade-in-up animation-delay-600">
-              {heroSection.ctaButtons?.map((button: any, index: number) => (
+              {heroSection.ctaButtons?.map((button: { text: string; link: string; isPrimary: boolean }, index: number) => (
                 <Link
                   key={index}
                   href={button.link}
@@ -227,7 +228,7 @@ useEffect(() => {
 
             {/* Dynamic Stats */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl animate-fade-in-up animation-delay-800">
-              {stats.map((stat: any, index: number) => (
+              {stats.map((stat: { number: string; label: string }, index: number) => (
                 <div key={index} className="group backdrop-blur-lg bg-white/90 rounded-2xl p-6 border border-gray-200/50 hover:bg-white hover:shadow-xl transition-all duration-300 hover:scale-105">
                   <h3 className="text-4xl font-bold text-emerald-600 mb-2 group-hover:scale-110 transition-transform">{stat.number}</h3>
                   <p className="text-gray-600">{stat.label}</p>
@@ -300,7 +301,7 @@ useEffect(() => {
 
               {/* Feature Grid */}
               <div className="grid grid-cols-2 gap-4">
-                {aboutSection.features?.map((feature: any, index: number) => (
+                {aboutSection.features?.map((feature: { icon: string; title: string; color: string }, index: number) => (
                   <div key={index} className="group flex items-center space-x-3 p-4 bg-emerald-50 hover:bg-emerald-100 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg">
                     <span className="text-2xl group-hover:scale-110 transition-transform">{feature.icon}</span>
                     <span className="text-gray-700 font-medium">{feature.title}</span>
@@ -350,7 +351,7 @@ useEffect(() => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {productsSection.featuredProducts?.map((product: any, index: number) => (
+            {productsSection.featuredProducts?.map((product: { title: string; description: string; accent: string; image: any }, index: number) => (
               <div key={index} className="group relative backdrop-blur-lg bg-white/90 rounded-3xl p-8 border border-gray-200/50 hover:bg-white hover:shadow-xl hover:border-emerald-300/50 transition-all duration-500 hover:scale-105 hover:-translate-y-2">
                 <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-green-600/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 

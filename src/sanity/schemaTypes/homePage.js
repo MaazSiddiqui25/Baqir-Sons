@@ -1,5 +1,5 @@
 // schemas/homePage.ts
-export default {
+const homePageSchema = {
   name: 'homePage',
   title: 'Home Page',
   type: 'document',
@@ -343,3 +343,4 @@ export default {
     }
   }
 }
+export default homePageSchema;

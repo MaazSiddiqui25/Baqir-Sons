@@ -446,7 +446,7 @@ export default function PrivacyPolicyPage() {
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Policy Updates</h3>
                 <p className="text-gray-600 mb-4 max-w-2xl mx-auto">
                   We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. 
-                  We will notify you of any material changes by posting the updated policy on our website and updating the "Last Updated" date.
+                  We will notify you of any material changes by posting the updated policy on our website and updating the &quot;Last Updated&quot; date.
                 </p>
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-100 text-emerald-800 rounded-full text-sm font-medium">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -475,17 +475,17 @@ export default function PrivacyPolicyPage() {
               Questions or Concerns?
             </div>
             
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-              We're Here to{" "}
-              <span className="bg-gradient-to-r from-emerald-600 via-green-600 to-emerald-700 bg-clip-text text-transparent">
-                Help
-              </span>
-            </h2>
+           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+  We&apos;re Here to{" "}
+  <span className="bg-gradient-to-r from-emerald-600 via-green-600 to-emerald-700 bg-clip-text text-transparent">
+    Help
+  </span>
+</h2>
             
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-              If you have any questions about our Privacy Policy or how we handle your data, 
-              don't hesitate to reach out to our team.
-            </p>
+  If you have any questions about our Privacy Policy or how we handle your data, 
+  don&apos;t hesitate to reach out to our team.
+</p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               

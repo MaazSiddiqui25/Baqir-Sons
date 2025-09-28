@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Container from "../../../components/ui/Container";
-import { client, getImageUrl, fetchWithCacheControl } from '../../../sanity/lib/client';
+import { client, getImageUrl } from '../../../sanity/lib/client';
 import { singleProductQuery, productsListQuery } from "../../../lib/queries";
 
 interface Product {
