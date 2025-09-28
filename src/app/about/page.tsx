@@ -480,16 +480,16 @@ market leader in agriculture sector of Pakistan
             </div>
             
             <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-900">
-              "Let\'s Build Something Amazing Together"{" "}
-              <span className="bg-gradient-to-r from-emerald-600 to-green-600 bg-clip-text text-transparent">
-                Amazing Together
-              </span>
-            </h2>
+  Let&apos;s Build Something{" "}
+  <span className="bg-gradient-to-r from-emerald-600 to-green-600 bg-clip-text text-transparent">
+    Amazing Together
+  </span>
+</h2>
             
             <p className="text-xl text-gray-600 mb-12 leading-relaxed">
-              Whether you need premium products, custom solutions, or expert consultation, 
-              we\'re here to help you achieve your goals
-            </p>
+  Whether you need premium products, custom solutions, or expert consultation, 
+  we&apos;re here to help you achieve your goals with excellence and innovation.
+</p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link

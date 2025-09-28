@@ -166,7 +166,7 @@ export default function ContactPage() {
 
               <p className={`text-lg md:text-xl lg:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed ${isLoaded ? 'animate-fade-in-up animation-delay-400' : 'opacity-0'}`}>
                 Ready to start your next project? We're here to help you achieve excellence 
-                with innovative solutions tailored to your needs. Let\'s Build Something Amazing Together.
+                with innovative solutions tailored to your needs. Let&apos;s Build Something Together.
               </p>
 
               {/* Quick Action Buttons */}
