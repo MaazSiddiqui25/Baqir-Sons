@@ -14,16 +14,7 @@ export default function AboutPage() {
   }, []);
 
   // Team members data
-  const teamMembers = [
-    {
-      name: "Umar Shahbaz Ranjha",
-      position: "Director",
-      image: "/director.jpg",
-      description: "Visionary leader with 25+ years in manufacturing excellence",
-      expertise: ["Strategic Leadership", "Manufacturing Innovation", "Quality Assurance"]
-    }
-    
-  ];
+ 
 
   // Values data
   const values = [
@@ -440,11 +431,13 @@ market leader in agriculture sector of Pakistan
         
         <div className="relative z-10 text-center">
           <div className="w-32 h-32 mx-auto mb-6 bg-gradient-to-br from-emerald-100 to-green-100 rounded-full overflow-hidden group-hover:scale-110 transition-transform duration-500 border-4 border-emerald-200/50">
-            <img
-              src="/director.jpg"
-              alt="Umar Shehbaz Ranjha - Director"
-              className="w-full h-full object-cover"
-            />
+            <Image
+  src="/director.jpg"
+  alt="Umar Shehbaz Ranjha - Director"
+  width={128}
+  height={128}
+  className="w-full h-full object-cover"
+/>
           </div>
           
           <h3 className="text-2xl font-bold text-gray-900 mb-2">
