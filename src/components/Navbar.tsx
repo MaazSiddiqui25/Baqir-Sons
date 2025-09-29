@@ -104,7 +104,7 @@ export default function Navbar() {
               <Link
                 key={index}
                 href={link.href}
-                onClick={(_e) => {
+                onClick={(_) => {
                   console.log('Mobile link clicked:', link.label, 'href:', link.href);
                   setIsMenuOpen(false);
                 }}
@@ -118,7 +118,7 @@ export default function Navbar() {
             <div className="pt-4 border-t border-gray-100">
               <Link
                 href="/contact"
-                onClick={(_e) => {
+                onClick={(_) => {
                   console.log('Mobile Get Quote clicked');
                   setIsMenuOpen(false);
                 }}

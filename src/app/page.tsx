@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Container from "../components/ui/Container";
 import BannerSlider from "../components/BannerSlider";
-import { client, getImageUrl, fetchWithCacheControl, HomePageData } from '../sanity/lib/client';
+import { getImageUrl, fetchWithCacheControl, HomePageData } from '../sanity/lib/client';
 import { homePageQuery } from "../lib/queries";
 import { PortableText } from '@portabletext/react';
 
